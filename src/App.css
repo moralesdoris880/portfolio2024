@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+#App{
+  background-image: url(/public/smooth-white-stucco-wall.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  width:100vw;
+  height:300vh;
+  display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+#Cyborg{
+  height: 768px;
+  width: 100vw;
+  background-color: aqua;
+  opacity: 100%;
+  background-image: url(/public/ac54f62f79754ba.png);
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
+}
+ 
+@keyframes floating{
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#AboutMe{
+  margin-top: 200px;
+  margin-left: 200px;
+  height: 800px;
+  width: 600px;
+  background-color: red;
+}
+
+#Heart{
+  width: 100px;
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(/public/heart3.png);
+  position: absolute;
+  left: 45%;
+  top: 45%;
+	animation: beat .50s infinite alternate;
+	transform-origin: center;
+  /* box-shadow: 10px 10px 20px 10px red; */
+}
+
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.04); }
 }
