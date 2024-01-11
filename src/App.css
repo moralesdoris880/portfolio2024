@@ -1,5 +1,5 @@
 #App{
-  background-image: url(/public/smooth-white-stucco-wall.jpg);
+  background-image: url(/public/website+bg+2.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
@@ -10,17 +10,44 @@
 
 }
 
+#Hand{
+  position: absolute;
+  top: 1200px;
+  left:-5px;
+  background-image: url(/public/Hans4.png);
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  animation: wave .7s steps(3) infinite;
+  width: 330px;
+  height: 410px;
+}
+
+@keyframes wave{
+  from{
+    background-position: 48px;
+  }
+  to{
+    background-position: -900px;
+  }
+}
+
+#DorisMorales{
+  background-image: url(/public/ransomizer.com.fileTswtkR.png);
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
 #Cyborg{
-  height: 768px;
+  height: 1250px;
   width: 100vw;
-  background-color: aqua;
   opacity: 100%;
-  background-image: url(/public/ac54f62f79754ba.png);
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-top: 5px;
+  background-image: url(/public/Testing3.png);
+  background-size: 100%;
+  margin-top: -20px;
+  background-repeat: no-repeat;
 }
  
 @keyframes floating{
@@ -30,25 +57,35 @@
 }
 
 #AboutMe{
-  margin-top: 200px;
-  margin-left: 200px;
-  height: 800px;
+  margin-top: 1060px;
+  margin-left: 43%;
+  height: 500px;
   width: 600px;
-  background-color: red;
+  background-image: url(/public/Red2.png);
+  position: absolute;
+  padding: 70px;
+  background-repeat: no-repeat;
 }
 
 #Heart{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(/public/heart3.png);
+  background-image: url(/public/Heart\ test.png);
   position: absolute;
-  left: 45%;
-  top: 45%;
+  left: 42.5%;
+  top: 70%;
 	animation: beat .50s infinite alternate;
 	transform-origin: center;
+  border: none;
+  background-color:transparent;
+  outline:none;
   /* box-shadow: 10px 10px 20px 10px red; */
+}
+
+#Heart:hover{
+  cursor: pointer;
 }
 
 /* Heart beat animation */
