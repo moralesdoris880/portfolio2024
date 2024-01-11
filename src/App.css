@@ -1,20 +1,30 @@
 #App{
-  background-image: url(/public/website+bg+2.png);
+  background-image: url(/public/paperbackground.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   width:100vw;
-  height:300vh;
+  height:500vh;
   display:flex;
   flex-direction: column;
 
+}
+
+#ProjectTitle{
+  background-image: url(/public/projects.png);
+  height: 150px;
+  width: 700px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1700px;
+  left: 33%;
 }
 
 #Hand{
   position: absolute;
   top: 1200px;
   left:-5px;
-  background-image: url(/public/Hans4.png);
+  background-image: url(/public/HandsTesting.png);
   background-repeat: no-repeat;
   background-size: 1000px;
   animation: wave .7s steps(3) infinite;
@@ -32,7 +42,7 @@
 }
 
 #DorisMorales{
-  background-image: url(/public/ransomizer.com.fileTswtkR.png);
+  background-image: url(/public/dorismorales.png);
   width: 800px;
   height: 100px;
   position: absolute;
@@ -44,7 +54,7 @@
   height: 1250px;
   width: 100vw;
   opacity: 100%;
-  background-image: url(/public/Testing3.png);
+  background-image: url(/public/cyborg.png);
   background-size: 100%;
   margin-top: -20px;
   background-repeat: no-repeat;
@@ -52,19 +62,48 @@
  
 @keyframes floating{
     0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
+    50%  { transform: translate(0, 10px); }
     100%   { transform: translate(0, -0px); }    
 }
 
 #AboutMe{
-  margin-top: 1060px;
-  margin-left: 43%;
+  margin-top: 1100px;
+  margin-left: 44%;
   height: 500px;
-  width: 600px;
-  background-image: url(/public/Red2.png);
+  width: 500px;
+  background-image: url(/public/redsquare.png);
   position: absolute;
   padding: 70px;
   background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#AboutMeTitle{
+  background-image: url(/public/aboutmetitle.png);
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  margin-top: 975px;
+  margin-left: 47%;
+}
+
+.AboutMeSection{
+  height: 150px;
+  width: 500px;
+  color:white;
+  font-family: Bitter;
+  text-indent: 2em;
+  text-align: justify;
+  line-height: 32px;
+}
+
+.material-symbols-outlined{
+  position: absolute;
+  top: 440px;
+  color: white;
+  font-size: 40px;
+  left: 45%;
+  animation: floating 1s infinite;
 }
 
 #Heart{
@@ -72,7 +111,7 @@
   height: 200px;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(/public/Heart\ test.png);
+  background-image: url(/public/heart.png);
   position: absolute;
   left: 42.5%;
   top: 70%;
