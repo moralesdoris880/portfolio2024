@@ -15,8 +15,19 @@
 
 }
 
+#defaultUIText{
+  width: 500px;
+  height: 150px;
+  position: relative;
+  left: 5%;
+  top: 25%;
+  margin: 50px;
+  background-color: white;
+}
+
 #defaultProject{
-  background-color: blueviolet;
+  background-image: url(/public/defaultProject.png);
+  background-size: cover;
   width: 660px;
   height: 410px;
   position: relative;
@@ -31,7 +42,7 @@
   background-color: orange;
   position: relative;
   left: 10%;
-  top: 15%;
+  top: 5%;
 }
 
 #ProjectDemo{

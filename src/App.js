@@ -5,7 +5,7 @@ function App() {
     <div id="App">
       <div id="DorisMorales"></div>
       <div id="Cyborg">
-        <button id="Heart" onClick={()=>{window.scrollTo({ top: 850, behavior: "smooth" })}}></button>
+        <button id="Heart" onClick={()=>{window.scrollTo({ top: 920, behavior: "smooth" })}}></button>
       </div>
       <div id="AboutMeTitle"></div>
       <div id="AboutMe">
@@ -35,8 +35,7 @@ function App() {
         <div id="ProjectDemo">
             <div id="outlineProjectDemo">
               <div id="defaultProject">
-                DEFAULT DIV
-                <div>
+                <div id="defaultUIText">
                     <p>RECTANGLE WITH TEXT - SELECT PROJECT</p>
                     <div>ARROW HORIZONTAL TRANSLATE</div>
                 </div>
