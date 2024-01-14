@@ -15,15 +15,23 @@
 
 }
 
+#defaultProject{
+  background-color: blueviolet;
+  width: 660px;
+  height: 410px;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  bottom: -20px;
+}
+
 #outlineProjectDemo{
-  width: 650px;
+  width: 700px;
   height: 450px;
   background-color: orange;
   position: relative;
-  /* left: 15%;
-  right: 15%;
-  top: 15%; */
-  inset: 15% 15% 0% 15%;
+  left: 10%;
+  top: 15%;
 }
 
 #ProjectDemo{

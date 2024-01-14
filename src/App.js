@@ -27,18 +27,20 @@ function App() {
         <div id="Notepad">
             <li id="firstProject">Meraz M Portfolio</li>
             <li className="Projects">J&G Bartending</li>
-            <li className="Projects">Coming Soon</li>
-            <li className="Projects">Coming Soon</li>
+            <li className="Projects">CJ Fish Guide</li>
+            <li className="Projects">NYC Drinkers</li>
             <li className="Projects">Coming Soon</li>
             <li className="Projects">Coming Soon</li>
         </div>
         <div id="ProjectDemo">
-            <div id="outlineProjectDemo">INSERT WRITTEN LINE HERE SIMILAR TO NOTEPAD</div>
-            <div>
-              HERE IS THE STARTER DIV, BEFORE ANY PROJECTS ARE SELECT - UI TO HELP USER SELECT A PROJECT FOR MORE INFO
-              <div>BLURRY IMAGE OF A PROJECT, when no projects clicked on</div>
-              <div>Overlayer over blurry image, rough rectange, with text "SELECT A PROJECT"</div>
-              <div>WRITTEN ARROW WITH HORIZONTAL MOVEMENT</div>
+            <div id="outlineProjectDemo">
+              <div id="defaultProject">
+                DEFAULT DIV
+                <div>
+                    <p>RECTANGLE WITH TEXT - SELECT PROJECT</p>
+                    <div>ARROW HORIZONTAL TRANSLATE</div>
+                </div>
+              </div>
             </div>
         </div>
       </div>
