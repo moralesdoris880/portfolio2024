@@ -4,8 +4,9 @@ function App() {
   return (
     <div id="App">
       <div id="DorisMorales"></div>
-      <div id="Cyborg"></div>
-      <button id="Heart" onClick={()=>{window.scrollTo({ top: 850, behavior: "smooth" })}}></button>
+      <div id="Cyborg">
+        <button id="Heart" onClick={()=>{window.scrollTo({ top: 850, behavior: "smooth" })}}></button>
+      </div>
       <div id="AboutMeTitle"></div>
       <div id="AboutMe">
         <p class="AboutMeSection">
@@ -21,8 +22,26 @@ function App() {
           arrow_downward
         </span>
       </div>
-      <div id="Hand"></div>
       <div id="ProjectTitle"></div>
+      <div id="ProjectSection">
+        <div id="Notepad">
+            <li id="firstProject">Meraz M Portfolio</li>
+            <li className="Projects">J&G Bartending</li>
+            <li className="Projects">Coming Soon</li>
+            <li className="Projects">Coming Soon</li>
+            <li className="Projects">Coming Soon</li>
+            <li className="Projects">Coming Soon</li>
+        </div>
+        <div id="ProjectDemo">
+            <div id="outlineProjectDemo">INSERT WRITTEN LINE HERE SIMILAR TO NOTEPAD</div>
+            <div>
+              HERE IS THE STARTER DIV, BEFORE ANY PROJECTS ARE SELECT - UI TO HELP USER SELECT A PROJECT FOR MORE INFO
+              <div>BLURRY IMAGE OF A PROJECT, when no projects clicked on</div>
+              <div>Overlayer over blurry image, rough rectange, with text "SELECT A PROJECT"</div>
+              <div>WRITTEN ARROW WITH HORIZONTAL MOVEMENT</div>
+            </div>
+        </div>
+      </div>
     </div>
   );
 }
