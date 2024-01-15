@@ -12,17 +12,42 @@
   height:500vh;
   display:flex;
   flex-direction: column;
+}
 
+#arrow{
+  width: 100px;
+  height: 80px;
+  background-color: yellowgreen;
+  position: relative;
+  left: 10%;
+  top: 5%;
+  animation: arrow_movement .50s infinite alternate;
+}
+
+@keyframes arrow_movement{
+  0% { transform: translate(10px,  0px); }
+  50%  { transform: translate(10px, 0px); }
+  100%   { transform: translate(0px, -0px); }    
+}
+
+h2{
+  font-family: "Rock Salt";
+  font-size: 26px;
+  text-align: right;
+  position: relative;
+  top: 60px;
+  right: 50px;
 }
 
 #defaultUIText{
+  background-image: url(/public/Whiterectangle.png);
+  background-repeat: no-repeat;
   width: 500px;
   height: 150px;
   position: relative;
   left: 5%;
   top: 25%;
   margin: 50px;
-  background-color: white;
 }
 
 #defaultProject{

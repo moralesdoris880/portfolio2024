@@ -36,8 +36,8 @@ function App() {
             <div id="outlineProjectDemo">
               <div id="defaultProject">
                 <div id="defaultUIText">
-                    <p>RECTANGLE WITH TEXT - SELECT PROJECT</p>
-                    <div>ARROW HORIZONTAL TRANSLATE</div>
+                    <h2>Select a Project</h2>
+                    <div id="arrow"></div>
                 </div>
               </div>
             </div>
