@@ -4,6 +4,16 @@ import './App.css';
 function App() {
   const[displayDefault,setdisplayDefault]=useState(true)
   const[displayMM,setdisplayMM]=useState(false)
+  const[githubLink,setgithubLink]=useState("")
+  const[websiteLink,setwebsiteLink]=useState("")
+
+  function mmPortfolio(e){
+    e.preventDefault();
+    setdisplayDefault(!displayDefault)
+    setdisplayMM(!displayMM)
+    setgithubLink("https://github.com/moralesdoris880/mmportfolio")
+    setwebsiteLink("https://preeminent-twilight-8ab011.netlify.app/")
+  }
 
   return (
     <div id="App">
@@ -29,41 +39,50 @@ function App() {
       <div id="ProjectTitle"></div>
       <div id="ProjectSection">
         <div id="Notepad">
-            <li id="firstProject" onClick={()=>{return setdisplayMM(!displayMM)}}>Meraz M Portfolio</li>
-            <li className="Projects">J&G Bartending</li>
-            <li className="Projects">CJ Fish Guide</li>
-            <li className="Projects">NYC Drinkers</li>
+            <li id="firstProject" onClick={(e)=>mmPortfolio(e)}>Meraz M Portfolio</li>
+            <li className="Projects">Coming Soon</li>
+            <li className="Projects">Coming Soon</li>
+            <li className="Projects">Coming Soon</li>
             <li className="Projects">Coming Soon</li>
             <li className="Projects">Coming Soon</li>
         </div>
         <div id="ProjectDemo">
             <div id="outlineProjectDemo">
-              <div id="defaultProject">
+              {displayDefault?<div id="defaultProject">
                 <div id="defaultUIText">
                     <h2>Select a Project</h2>
                     <div id="arrow"></div>
                 </div>
-              </div>
+              </div>:null
+              }
               {displayMM?
                 <div id="MerazMPortfolio">
                 </div>:null
               }
-              
-              {/* <div id="defaultProject">
-                <div id="defaultUIText">
-                    <h2>J&G Bartending</h2>
-                </div>
-              </div>
-              <div id="defaultProject">
-                <div id="defaultUIText">
-                    <h2>DBlock</h2>
-                </div>
-              </div> */}
             </div>
+        </div>
+        <div>
+          {displayMM? 
+          <div id="linklist">
+            <a className="links" href={githubLink}>Github</a>
+            <a className="links" href={websiteLink}>Website</a>
+          </div>:null
+          } 
         </div>
       </div>
       <div id="skills">
-
+      </div>
+      <div id="skillList">
+        <img className="logos" alt="logo for javascript" src="./javascript2.png"/>
+        <img className="logos" alt="logo for typescript" src="typescript.svg"/>
+        <img className="logos" alt='logo for html' src="./html.webp"/>
+        <img className="logos" alt="logo for css" src="./css3.svg"/>
+        <img className="logos" alt="logo for react" src="./reactlogo.png"/>
+        <img className="logos" alt="logo for react test library" src="./rtl.png"/>
+        <img className="logos" alt="logo for jest" src="jest.png" />
+        <img className="logos" alt='logo for tailwind css' src="./tailwind.png"/>
+        <img className="logos" alt="logo for figma" src="figma3.png"/>
+        <img className="logos" alt='logo for postgresql' src="Postgresql.jpeg"/>
       </div>
     </div>
   );
