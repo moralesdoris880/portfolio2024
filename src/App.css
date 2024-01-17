@@ -14,6 +14,35 @@
   flex-direction: column;
 }
 
+#MerazMPortfolio{
+  background-image: url(/public/mportfolio.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 660px;
+  height: 410px;
+  position: absolute;
+  margin-left: 20px;
+  margin-right: 20px;
+  top:20px;
+}
+
+#skills{
+  background-image: url(/public/skills.png);
+  width: 800px;
+  height: 150px;
+  position: relative;
+  top: 1300px;
+  left: 550px;
+}
+
+#CJFishingGuide{
+  background-image: url(/public/cjfishguide.png);
+  background-repeat: no-repeat;
+  width: 660px;
+  height: 410px;
+  position: absolute;
+}
+
 #arrow{
   width: 100px;
   height: 80px;
@@ -75,21 +104,26 @@ h2{
 }
 
 .Projects{
-  font-family: Bitter;
+  font-family: "Rock Salt";
   margin-left: 40px;
-  font-size: 30px;
+  font-size: 22px;
   position: relative;
-  padding-top: 25px;
+  padding-top: 32px;
   width: 300px;
 }
 
+.Projects:hover{
+  color: red;
+  cursor: pointer;
+}
+
 #firstProject{
-    font-family: Bitter;
+    font-family: "Rock Salt";
     margin-left: 40px;
-    font-size: 30px;
+    font-size: 22px;
     position: relative;
     padding-top: 80px;
-    width: 300px;
+    width: 330px;
 }
 
 #Notepad{
@@ -215,12 +249,6 @@ h2{
   outline:none;
   aspect-ratio: 1 / 1;
 }
-
-/* #Heart.centered-axis-x {
-  position: absolute;
-  left: 20%;
-  transform: translate(-20%, 0);
-} */
 
 #Heart:hover{
   cursor: pointer;

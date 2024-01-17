@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const[displayDefault,setdisplayDefault]=useState(true)
+  const[displayMM,setdisplayMM]=useState(false)
+
   return (
     <div id="App">
       <div id="DorisMorales"></div>
@@ -25,7 +29,7 @@ function App() {
       <div id="ProjectTitle"></div>
       <div id="ProjectSection">
         <div id="Notepad">
-            <li id="firstProject">Meraz M Portfolio</li>
+            <li id="firstProject" onClick={()=>{return setdisplayMM(!displayMM)}}>Meraz M Portfolio</li>
             <li className="Projects">J&G Bartending</li>
             <li className="Projects">CJ Fish Guide</li>
             <li className="Projects">NYC Drinkers</li>
@@ -40,8 +44,26 @@ function App() {
                     <div id="arrow"></div>
                 </div>
               </div>
+              {displayMM?
+                <div id="MerazMPortfolio">
+                </div>:null
+              }
+              
+              {/* <div id="defaultProject">
+                <div id="defaultUIText">
+                    <h2>J&G Bartending</h2>
+                </div>
+              </div>
+              <div id="defaultProject">
+                <div id="defaultUIText">
+                    <h2>DBlock</h2>
+                </div>
+              </div> */}
             </div>
         </div>
+      </div>
+      <div id="skills">
+
       </div>
     </div>
   );
