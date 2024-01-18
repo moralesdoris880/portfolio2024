@@ -83,7 +83,29 @@ function App() {
         <img className="logos" alt='logo for tailwind css' src="./tailwind.png"/>
         <img className="logos" alt="logo for figma" src="figma3.png"/>
         <img className="logos" alt='logo for postgresql' src="Postgresql.jpeg"/>
+        <div>
+          {/* <img className="logos" alt="logo for javascript" src=""/> JIRA */}
+          {/* <img className="logos" alt="logo for typescript" src=""/> SAML/Authentication */}
+          {/* <img className="logos" alt='logo for html' src="./html.webp"/> Python */}
+          {/* <img className="logos" alt="logo for css" src="./css3.svg"/> Ruby */}
+          {/* <img className="logos" alt="logo for react" src="./reactlogo.png"/> Terraform */}
+          {/* <img className="logos" alt="logo for react test library" src="./rtl.png"/> AWS */}
+        </div>
       </div>
+      <footer>
+        <div>
+          <h3>Contact</h3>
+        </div>
+        <div>
+          <h3>Follow Me</h3>
+          <a>LinkedIn</a>
+          <a>Youtube</a>
+          <a>Blog</a>
+        </div>
+        <div>
+          <p>Copyright @2024 Doris Morales. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 }
