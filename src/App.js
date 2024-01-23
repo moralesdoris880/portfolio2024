@@ -1,19 +1,7 @@
-import { useState } from 'react';
+import Projects from './components/Projects.js';
 import './App.css';
 
 function App() {
-  const[displayDefault,setdisplayDefault]=useState(true)
-  const[displayMM,setdisplayMM]=useState(false)
-  const[githubLink,setgithubLink]=useState("")
-  const[websiteLink,setwebsiteLink]=useState("")
-
-  function mmPortfolio(e){
-    e.preventDefault();
-    setdisplayDefault(!displayDefault)
-    setdisplayMM(!displayMM)
-    setgithubLink("https://github.com/moralesdoris880/mmportfolio")
-    setwebsiteLink("https://preeminent-twilight-8ab011.netlify.app/")
-  }
 
   return (
     <div id="App">
@@ -22,6 +10,9 @@ function App() {
         <button id="Heart" onClick={()=>{window.scrollTo({ top: 920, behavior: "smooth" })}}></button>
       </div>
       <div id="AboutMeTitle"></div>
+      <div id="tape">
+        <div id="DorisPic"></div>
+      </div>
       <div id="AboutMe">
         <p class="AboutMeSection">
           👋 Hi there! I'm Doris Morales, an aspiring Frontend Engineer based in NYC with over a year of experience in the tech industry. 
@@ -36,42 +27,10 @@ function App() {
           arrow_downward
         </span>
       </div>
-      <div id="ProjectTitle"></div>
-      <div id="ProjectSection">
-        <div id="Notepad">
-            <li id="firstProject" onClick={(e)=>mmPortfolio(e)}>Meraz M Portfolio</li>
-            <li className="Projects">Coming Soon</li>
-            <li className="Projects">Coming Soon</li>
-            <li className="Projects">Coming Soon</li>
-            <li className="Projects">Coming Soon</li>
-            <li className="Projects">Coming Soon</li>
-        </div>
-        <div id="ProjectDemo">
-            <div id="outlineProjectDemo">
-              {displayDefault?<div id="defaultProject">
-                <div id="defaultUIText">
-                    <h2>Select a Project</h2>
-                    <div id="arrow"></div>
-                </div>
-              </div>:null
-              }
-              {displayMM?
-                <div id="MerazMPortfolio">
-                </div>:null
-              }
-            </div>
-        </div>
-        <div>
-          {displayMM? 
-          <div id="linklist">
-            <a className="links" href={githubLink}>Github</a>
-            <a className="links" href={websiteLink}>Website</a>
-          </div>:null
-          } 
-        </div>
-      </div>
+      <Projects />
       <div id="skills">
       </div>
+      <div>
       <div id="skillList">
         <img className="logos" alt="logo for javascript" src="./javascript2.png"/>
         <img className="logos" alt="logo for typescript" src="typescript.svg"/>
@@ -83,7 +42,8 @@ function App() {
         <img className="logos" alt='logo for tailwind css' src="./tailwind.png"/>
         <img className="logos" alt="logo for figma" src="figma3.png"/>
         <img className="logos" alt='logo for postgresql' src="Postgresql.jpeg"/>
-        <div>
+      </div>
+      <div>
           {/* <img className="logos" alt="logo for javascript" src=""/> JIRA */}
           {/* <img className="logos" alt="logo for typescript" src=""/> SAML/Authentication */}
           {/* <img className="logos" alt='logo for html' src="./html.webp"/> Python */}
@@ -91,16 +51,16 @@ function App() {
           {/* <img className="logos" alt="logo for react" src="./reactlogo.png"/> Terraform */}
           {/* <img className="logos" alt="logo for react test library" src="./rtl.png"/> AWS */}
         </div>
-      </div>
+      </div> 
       <footer>
         <div>
           <h3>Contact</h3>
         </div>
         <div>
           <h3>Follow Me</h3>
-          <a>LinkedIn</a>
+          {/* <a>LinkedIn</a>
           <a>Youtube</a>
-          <a>Blog</a>
+          <a>Blog</a> */}
         </div>
         <div>
           <p>Copyright @2024 Doris Morales. All rights reserved.</p>
@@ -110,5 +70,5 @@ function App() {
   );
 }
 
-
 export default App;
+

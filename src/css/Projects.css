@@ -1,0 +1,109 @@
+:root{
+    --notepad-width:400px;
+    --notepad-margin:60px;
+  }
+
+#JGBartending{
+    background-image: url(/public/jgbartending2.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 660px;
+    height: 410px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    bottom: -20px;
+}
+
+#defaultUIText{
+    background-image: url(/public/Whiterectangle.png);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 150px;
+    position: relative;
+    left: 10%;
+    top: 25%;
+}
+  
+#defaultProject{
+    background-image: url(/public/defaultProject.png);
+    background-size: cover;
+    width: 660px;
+    height: 410px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    bottom: -20px;
+}
+  
+#outlineProjectDemo{
+    width: 700px;
+    height: 450px;
+    border-color: #323232;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+  
+.Projects{
+    font-family: "Rock Salt";
+    margin-left: 40px;
+    font-size: 22px;
+    position: relative;
+    padding-top: 32px;
+    width: 300px;
+}
+  
+.Projects:hover{
+    color: red;
+    cursor: pointer;
+}
+  
+#firstProject{
+      font-family: "Rock Salt";
+      margin-left: 40px;
+      font-size: 22px;
+      position: relative;
+      padding-top: 80px;
+      width: 330px;
+}
+  
+#firstProject:hover{
+    color: red;
+}
+
+#Notepad{
+    background-image: url(/public/Notepad.png);
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    height: 600px;
+    width: var(--notepad-width);
+    margin-left: var(--notepad-margin);
+    position: relative;
+    padding-right: 60px;
+}
+
+#ProjectDemo{
+    width: calc(100% - var(-notepad-width)+ var(-notepad-margin));
+}
+
+#ProjectTitle{
+    background-image: url(/public/projects.png);
+    height: 150px;
+    width: 700px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1700px;
+    left: 33%;
+  }
+
+#ProjectSection{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 1900px;
+}
