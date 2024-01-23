@@ -4,7 +4,7 @@
   }
 
 #JGBartending{
-    background-image: url(/public/jgbartending2.png);
+    background-image: url(/public/projects/jgbartending2.png);
     background-size:cover;
     background-repeat: no-repeat;
     width: 660px;
@@ -26,7 +26,7 @@
 }
   
 #defaultProject{
-    background-image: url(/public/defaultProject.png);
+    background-image: url(/public/projects/defaultProject.png);
     background-size: cover;
     width: 660px;
     height: 410px;

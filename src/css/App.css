@@ -1,0 +1,163 @@
+footer{
+  width: 100%;
+}
+
+#App{
+  background-image: url(/public/paperbackground.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  width:100%;
+  height:450vh;
+  display:flex;
+  flex-direction: column;
+}
+
+#Cyborg{
+  height: 1250px;
+  width: 100vw;
+  opacity: 100%;
+  background-image: url(/public/cyborg.png);
+  background-size: 100%;
+  margin-top: -20px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+#MainSection{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#DorisMorales{
+  background-image: url(/public/dorismorales.png);
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+#Heart{
+  width: 200px;
+  height: 200px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(/public/heart.png);
+  position: absolute;
+  left: 42.5%;
+  top: 72%;
+	animation: beat .50s infinite alternate;
+	transform-origin: center;
+  border: none;
+  background-color:transparent;
+  outline:none;
+  aspect-ratio: 1 / 1;
+}
+
+#Heart:hover{
+  cursor: pointer;
+}
+
+@keyframes beat{
+	to { transform: scale(1.04); }
+}
+
+/* ABOVE WORKS */
+
+
+.logos{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+#linklist{
+  width: 500px;
+  height: 50px;
+  position: absolute;
+  left: 41%;
+  top: 50px;
+}
+
+.links{
+  text-decoration: none;
+  margin: 10px;
+  padding: 6px;
+  border-radius: 15%;
+  font-family: "Rock Salt";
+  border-color: #323232;
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.links:hover{
+  background-color: #d3d3d3;
+  -webkit-backdrop-filter: opacity(10%);
+  backdrop-filter: opacity(10%);
+}
+
+#MerazMPortfolio{
+  background-image: url(/public/projects/mportfolio.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 660px;
+  height: 410px;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  bottom: -20px;
+}
+
+#skillsTitle{
+  width: 800px;
+  height: 150px;
+  position: relative;
+  top: 1300px;
+  left: 550px;
+}
+
+#arrow{
+  width: 100px;
+  height: 80px;
+  background-color: yellowgreen;
+  position: relative;
+  left: 10%;
+  top: 5%;
+  animation: arrow_movement .50s infinite alternate;
+}
+
+@keyframes arrow_movement{
+  0% { transform: translate(10px,  0px); }
+  50%  { transform: translate(10px, 0px); }
+  100%   { transform: translate(0px, -0px); }    
+}
+
+h2{
+  font-family: "Rock Salt";
+  font-size: 26px;
+  text-align: right;
+  position: relative;
+  top: 60px;
+  right: 50px;
+}
+
+ 
+@keyframes floating{
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.material-symbols-outlined{
+  position: absolute;
+  top: 440px;
+  color: white;
+  font-size: 40px;
+  left: 45%;
+  animation: floating 1s infinite;
+}
+
+
