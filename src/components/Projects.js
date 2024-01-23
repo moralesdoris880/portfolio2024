@@ -28,9 +28,9 @@ function Projects() {
     }
 
    return (
-    <div>
+    <div id="ProjectSection">
         <div id="ProjectTitle"></div>
-        <div id="ProjectSection">
+        <div id="ProjectContent">
             <div id="Notepad">
                 <li id="firstProject" onClick={(e)=>mmPortfolio(e)}>Meraz M Portfolio</li>
                 <li className="Projects" onClick={(e)=>JGBartending(e)}>J&G Bartending</li>

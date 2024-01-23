@@ -94,4 +94,20 @@
     margin-right: 50px;
     padding: 50px;
 }
+
+ 
+@keyframes floating{
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.material-symbols-outlined{
+  position: absolute;
+  top: 440px;
+  color: white;
+  font-size: 40px;
+  left: 45%;
+  animation: floating 1s infinite;
+}
   
