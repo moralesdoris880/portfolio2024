@@ -7,9 +7,9 @@ function Skills(){
             <div id="skillsTitle"></div>
             <ul>
                 {sourceSkills.map((source)=>
-                <div>
+                <div className="logoscontainer">
                     <img className="logos" alt={"logo"+source} src={source}></img>
-                    <div className="logoname">{source.substring(source.lastIndexOf('/')+1).split('.').slice(0, -1).join('.')}</div>
+                    <div className="logoname" >{source.substring(source.lastIndexOf('/')+1).split('.').slice(0, -1).join('.')}</div>
                 </div>)}
             </ul>
         </div>
