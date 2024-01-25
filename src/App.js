@@ -1,6 +1,8 @@
 import Projects from './components/Projects.js';
 import Skills from './components/Skills.js';
 import AboutMe from './components/AboutMe.js';
+import Contact from './components/Contact.js';
+import Footer from './components/Footer.js';
 import './css/App.css';
 
 function App() {
@@ -16,20 +18,8 @@ function App() {
       <AboutMe />
       <Projects />
       <Skills /> 
-      <footer>
-        <div>
-          <h3>Contact</h3>
-        </div>
-        <div>
-          <h3>Follow Me</h3>
-          {/* <a>LinkedIn</a>
-          <a>Youtube</a>
-          <a>Blog</a> */}
-        </div>
-        <div>
-          <p>Copyright @2024 Doris Morales. All rights reserved.</p>
-        </div>
-      </footer>
+      <Contact />
+      <Footer />
     </div>
   );
 }

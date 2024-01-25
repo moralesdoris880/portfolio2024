@@ -16,7 +16,7 @@ function AboutMe(){
                         🚀 I bring a unique blend of creativity and technical proficiency to every project, passionately crafting seamless digital experiences.
                         </p>
                     </div>
-                    <button id="ArrowDownward" onClick={()=>{window.scrollTo({ top: 1700, behavior: "smooth" })}}></button>
+                    <button className="ArrowDownward" onClick={()=>{window.scrollTo({ top: 1700, behavior: "smooth" })}}></button>
                     </div>
                     {/* <div id="FlipBack">
                     For later updates
