@@ -12,7 +12,7 @@ function Skills(){
                     <div className="logoname" >{source.substring(source.lastIndexOf('/')+1).split('.').slice(0, -1).join('.')}</div>
                 </div>)}
             </ul>
-            <button className="ArrowDownward" style={{left:"47%"}} onClick={()=>{window.scrollTo({ top: 1700, behavior: "smooth" })}}></button>
+            <button className="ArrowDownward2" onClick={()=>{window.scrollTo({ top: 1700, behavior: "smooth" })}}></button>
         </div>
     )
 }
