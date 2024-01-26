@@ -1,3 +1,71 @@
+@media (max-width: 480px) {
+    button.ArrowDownward{
+        left: 32%;
+        margin-top: 50px;
+        pointer-events: none;
+    }
+    div#AboutMeTextBox{
+        width: 250px;
+        height: 120px;
+        padding: 5px;
+    }
+
+    div#FlipFront{
+        width: 100%;
+        height: 300px;
+    }
+
+    div#AboutMeTextBox p{
+        width: 230px;
+        height: 100px;
+        font-size: 10px;
+        line-height: 17px;
+        padding: 10px;
+    }
+
+    div#AboutMeSubContent{
+        width: 300px;
+        padding: 0;
+        margin: 0;
+        left: 100px;
+        position: relative;
+        left: 15%;
+        margin-top: 100px;
+    }
+
+    div#AboutMeTitle{
+        width: 170%;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        left: 0px;
+        overflow-x: hidden;
+        top: 0;
+    }
+
+    div#DorisPic{
+        width: 150px;
+        height: 250px;
+        position: relative;
+    }
+
+    div#tape{
+        width: 150px;
+        height: 250px;
+        left: 32%;
+        position: relative;
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    div#AboutMeContent{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+  }
+
 #AboutMeSection{
     width: 100%;
     height: 100vh;

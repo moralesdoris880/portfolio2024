@@ -18,9 +18,6 @@ function AboutMe(){
                     </div>
                     <button className="ArrowDownward" onClick={()=>{window.scrollTo({ top: 1700, behavior: "smooth" })}}></button>
                     </div>
-                    {/* <div id="FlipBack">
-                    For later updates
-                    </div> */}
                 </div>
             </div>
         </div>

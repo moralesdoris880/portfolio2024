@@ -10,16 +10,16 @@ function App() {
   return (
     <div id="App">
       <div id="Cyborg">
+        <button id="Heart" onClick={()=>{window.scrollTo({ top: 1920, behavior: "smooth" })}}></button>
       </div>
       <div id="MainSection">
         <div id="DorisMorales"></div>
-        <button id="Heart" onClick={()=>{window.scrollTo({ top: 920, behavior: "smooth" })}}></button>
       </div>
       <AboutMe />
       <Projects />
-      <Skills /> 
+      {/*<Skills /> 
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
