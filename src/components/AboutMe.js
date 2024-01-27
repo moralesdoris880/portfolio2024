@@ -1,8 +1,9 @@
-import '../css/AboutMe.css'
+import '../css/AboutMe.css';
+import { forwardRef } from 'react';
 
-function AboutMe(){
+const AboutMe = forwardRef(function MyInput(props, ref){
     return(
-        <div id="AboutMeSection">
+        <div id="AboutMeSection" ref={ref}>
             <div id="AboutMeTitle"></div>
             <div id="AboutMeContent">
                 <div id="tape">
@@ -22,6 +23,6 @@ function AboutMe(){
             </div>
         </div>
     )
-}
+})
 
 export default AboutMe;
