@@ -1,9 +1,8 @@
 import '../css/AboutMe.css';
-import { forwardRef } from 'react';
 
-const AboutMe = forwardRef(function MyInput(props, ref){
+function AboutMe(){
     return(
-        <div id="AboutMeSection" ref={ref}>
+        <div id="AboutMeSection">
             <div id="AboutMeTitle"></div>
             <div id="AboutMeContent">
                 <div id="tape">
@@ -13,7 +12,7 @@ const AboutMe = forwardRef(function MyInput(props, ref){
                     <div id="FlipFront">
                     <div id="AboutMeTextBox">
                         <p>
-                        👋 Hi there! I'm Doris Morales, an aspiring Frontend Engineer based in NYC with over a year of experience in the tech industry. 
+                        👋 Hi there! I'm ris Morales, an aspiring Frontend Engineer based in NYC with over a year of experience in the tech industry. 
                         🚀 I bring a unique blend of creativity and technical proficiency to every project, passionately crafting seamless digital experiences.
                         </p>
                     </div>
@@ -23,6 +22,6 @@ const AboutMe = forwardRef(function MyInput(props, ref){
             </div>
         </div>
     )
-})
+}
 
 export default AboutMe;
