@@ -1,3 +1,15 @@
+@media (max-width: 480px){
+    div#FooterSection{
+        margin-top: 90px;   
+    }
+    div#socials{
+        left: 35%;
+    }
+    p#copyrighttitle{
+        left: 22%;
+    }
+}
+
 #FooterSection{
     width: 100%;
     height: 100px;

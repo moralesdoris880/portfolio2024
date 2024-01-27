@@ -6,6 +6,7 @@
         background-size: 100%;
         position: relative;
         left: 15%;
+        top: 5%;
     }
     div#skillsSection ul{
         left: 13%;
@@ -18,10 +19,7 @@
         margin: 0;
     }
     button.ArrowDownward2 {
-        pointer-events: none;
-        position: relative;
-        left: 40%;
-        top: 120px;
+        display: none;
     }
 }
 

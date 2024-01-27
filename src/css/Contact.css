@@ -1,3 +1,77 @@
+@media (max-width: 480px){
+    div#ContactTitle{
+        width: 170%;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        left: 10%;
+    }
+    div#ContactContent{
+        left: 7%;
+        width: 300px;
+        height: 600px;
+        border: none;
+    }
+    form#formSection{
+        width: 300px;
+        height: 600px;
+        flex-direction: column-reverse;
+        position: relative;
+        top:-100px;
+    }
+    div#secondSection{
+        padding-top: 0;
+        width: 300px;
+        height: 150px;
+        position: relative;
+        padding-left: 10%;
+    }
+    div#messageSection{
+       width: 300px;
+       height: 100px;
+       position: relative;
+       padding-left: 10%;
+    }
+    input.inputs{
+        margin: 0;
+    }
+    label#emailLabel{
+        top: 0;
+        margin: 0;
+        position: relative;
+        margin-top: 10px;
+    }
+    label#nameLabel{
+        top: 0;
+        margin: 0;
+        position: relative;
+    }
+    textarea#messageTextbox{
+        top: 0;
+        left: 0;
+        position: relative;
+        height: 100px;
+        width: 250px;
+        border: none;
+    }
+    label#messageLabel{
+        position: relative;
+        top: 0;
+        margin: 0;
+        left: 0;
+    }
+    input#submitButton{
+        left: 0;
+        margin-left: 10%;
+        top: 260px;
+        background-color: transparent;
+    }
+    input#submitButton:hover{
+        color: red;
+    }
+}
+
 #formSection{
     width: 700px;
     height: 500px;

@@ -1,8 +1,6 @@
 @media (max-width: 480px) {
     button.ArrowDownward{
-        left: 32%;
-        margin-top: 50px;
-        pointer-events: none;
+        display: none;
     }
     div#AboutMeTextBox{
         width: 250px;
